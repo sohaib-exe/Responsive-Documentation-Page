@@ -1,0 +1,98 @@
+html, body {
+    min-width: 100px;
+    color: #4d4035;
+    background-color: #ffffff;
+    font-family: 'Ubuntu', Arial;
+    line-height: 1.5;
+  }
+  
+  #navbar {
+    position: fixed;
+    min-width: 100px;
+    top: 0px;
+    left: 0px;
+    width: 280px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+  }
+  
+  header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: thin;
+  }
+  
+  #main-doc header {
+    text-align: left;
+    margin: 0px;
+  }
+  
+  #navbar ul {
+    height: 88%;
+    padding: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  #navbar li {
+    list-style: none;
+    border-top: 1px solid #4d4035;
+    position: relative;
+    width: 100%;
+  }
+  
+  #navbar a {
+    display: block;
+    text-decoration: none;
+    color: #4d4035;
+    padding: 10px 30px;
+    cursor: pointer;
+  }
+  
+  #main-doc {
+    position: absolute;
+    margin-left: 325px;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+  }
+  
+  code {
+    display: block;
+    text-align: left;
+    line-height: 2;
+    position: relative;
+    background-color: #384738;
+    color: rgba(90,188,88,1.0);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  
+  @media (max-width: 700px) {
+    #navbar ul {
+      border: 1px solid;
+      height: 200px;
+    }
+  
+    #navbar {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      padding: 0px;
+      margin: 0px;
+      max-height: 268px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+    #main-doc {
+      margin-left: 0;
+      margin-top: 280px;
+      position: relative;
+    }
+  }
